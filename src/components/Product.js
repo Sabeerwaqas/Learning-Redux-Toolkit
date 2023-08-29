@@ -18,12 +18,28 @@ const Product = () => {
 
   return (
     <div>
-      <h1>Product Dashboard</h1>
-      <div>
-        {product.map((item) => {
+      <h1 className="product-dashboard">Product Dashboard</h1>
+      <div className="item-container">
+        {product.map((item, index) => {
           return (
-            <div className="item-parent">
-              <img src={item.image} alt="" />
+            <div key={index} className="item">
+              <div className="item-parent">
+                <div className="image-parent">
+                  <img
+                    className="product-image"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                </div>
+                <div className="item-detail">
+                  <h6>{item.title}</h6>
+                  <small>
+                    This is our pride product and we are offering 50% discount.
+                  </small>
+                  <p>Price: ${item.price}</p>
+                </div>
+                <button className="cart-button">Add To Cart</button>
+              </div>
             </div>
           );
         })}
