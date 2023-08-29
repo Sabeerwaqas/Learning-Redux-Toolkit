@@ -50,8 +50,12 @@ body {
 
 .cart-button{
     margin-top: 5%;
-    border: 1px solid black;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 50px;
     font-weight: bold;
-    background-color: #ffffff;
-    color: #000000;
+    color: white;
+    background-color: blue;
 }
+

@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import "./product.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Product = () => {
+
+
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
@@ -22,7 +26,7 @@ const Product = () => {
       <div className="item-container">
         {product.map((item, index) => {
           return (
-            <div key={index} className="item">
+            <div key={product.id} className="item">
               <div className="item-parent">
                 <div className="image-parent">
                   <img

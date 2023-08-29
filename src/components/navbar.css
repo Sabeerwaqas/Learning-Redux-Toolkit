@@ -1,0 +1,34 @@
+.navbar{
+    background-color: #000080 !important;
+    
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.redux-toolkit{
+    color: white;
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 5px;
+}
+
+.dashboard-link, .product-link, .cart-link{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard-link{
+    margin-left: 10%;
+}
+
+.product-link{
+    margin-left: 30%;
+}
+
+.cart-link{
+    margin-left: 100%;
+}
